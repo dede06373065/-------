@@ -8,7 +8,7 @@ export default class App extends Component {
     saveFormData = (dataType) => {
         return (
             (event) => {
-                this.setState({ [dataType]: event.target.value })
+                this.setState({ [dataType]: event.target.value }) //dataType 识别为变量而不是单纯的字符串
             }
         )
     }
